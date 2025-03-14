@@ -12,7 +12,7 @@
       }
     },
     "include": [
-        "../"
+        "github:martingreber/nodejs-global-devbox-plugin"
     ]
   }
   
