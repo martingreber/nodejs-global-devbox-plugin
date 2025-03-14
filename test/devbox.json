@@ -1,0 +1,18 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
+    "packages": [],
+    "shell": {
+      "init_hook": [
+        "echo 'Testing the nodejs-global plugin!'"
+      ],
+      "scripts": {
+        "test": [
+          "if [[ $(npm config get prefix) != \"$PWD/.devbox/virtenv/nodejs-global/.npm-global\" ]]; then echo 'prefix dir test failed' && exit 1; fi"
+        ]
+      }
+    },
+    "include": [
+        "../"
+    ]
+  }
+  
