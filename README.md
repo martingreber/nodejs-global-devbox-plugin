@@ -2,11 +2,14 @@
 
 A [Devbox](https://www.jetify.com/docs/devbox/) plugin to set up a project-specific npm prefix directory.
 This makes `npm install -g <package>` install global packages only to your current devbox shell. This solves the
-issue described in the [Installing Global Packages](https://www.jetify.com/docs/devbox/devbox_examples/languages/nodejs/#installing-global-packages) section.
+issue of installing global packages described in the [Installing Global Packages](https://www.jetify.com/docs/devbox/devbox_examples/languages/nodejs/#installing-global-packages) section.
 
 # Installation
-Add the plugin to the `include` section in your `devbox.json` file:
+Add `nodejs` as a dependency and then add the plugin to the `include` section in your `devbox.json` file:
 ```
+"packages": [
+    "nodejs"
+],
 "include": [
     "github:martingreber/nodejs-global-devbox-plugin"
 ]
