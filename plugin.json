@@ -1,9 +1,9 @@
 {
     "name": "nodejs-global",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Makes the nodejs global installation directory local to the project",
     "env": {
-        "NPM_CONFIG_PREFIX": "{{.Virtenv}}/.npm-global",
+        "NPM_CONFIG_PREFIX": "{{.Virtenv}}/.npm",
         "PNPM_HOME": "{{.Virtenv}}/.pnpm",
         "PATH": "$PATH:{{.Virtenv}}/.npm-global/bin:{{.Virtenv}}/.pnpm"
     },

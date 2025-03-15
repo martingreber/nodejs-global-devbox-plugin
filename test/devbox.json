@@ -9,7 +9,7 @@
       ],
       "scripts": {
         "test": [
-          "if [[ $(npm config get prefix) != \"$PWD/.devbox/virtenv/nodejs-global/.npm-global\" ]]; then echo 'npm prefix dir test failed' && exit 1; fi",
+          "if [[ $(npm config get prefix) != \"$PWD/.devbox/virtenv/nodejs-global/.npm\" ]]; then echo 'npm prefix dir test failed' && exit 1; fi",
           "if [[ $(pnpm config get prefix) != \"$PWD/.devbox/virtenv/nodejs-global/.pnpm\" ]]; then echo 'pnpm prefix dir test failed' && exit 1; fi"
         ]
       }
