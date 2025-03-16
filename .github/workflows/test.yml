@@ -19,4 +19,4 @@ jobs:
           project-path: test
 
       - name: Run tests
-        run: cd test && devbox test
+        run: cd test && devbox run test
