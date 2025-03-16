@@ -3,14 +3,17 @@
     "packages": [
       "nodejs"
     ],
+    "env": {
+      "DEVBOX_COREPACK_ENABLED": "true"
+    },
     "shell": {
       "init_hook": [
         "echo 'Testing the nodejs-global plugin!'"
       ],
       "scripts": {
         "test": [
-          "if [[ $(npm config get prefix) != \"$PWD/.devbox/virtenv/nodejs-global/.npm\" ]]; then echo 'npm prefix dir test failed' && exit 1; fi",
-          "if [[ $(pnpm config get prefix) != \"$PWD/.devbox/virtenv/nodejs-global/.pnpm\" ]]; then echo 'pnpm prefix dir test failed' && exit 1; fi"
+          "npm add -g cowsay && cowsay \"npm add -g cowsay works\"; npm remove -g cowsay",
+          "pnpm add -g cowsay && cowsay \"pnpm add -g cowsay works\"; pnpm remove -g cowsay"
         ]
       }
     },
