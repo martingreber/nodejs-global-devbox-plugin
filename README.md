@@ -4,7 +4,7 @@ A [Devbox](https://www.jetify.com/docs/devbox/) plugin to set up a project-speci
 
 This solves the issue of installing global packages described in the [Installing Global Packages](https://www.jetify.com/docs/devbox/devbox_examples/languages/nodejs/#installing-global-packages) section.
 
-Supports npm, pnpm
+Supports npm, pnpm, yarn classic
 
 # Installation
 Add `nodejs` as a dependency and then add the plugin to the `include` section in your `devbox.json` file:
