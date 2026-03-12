@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
+    "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.0/.schema/devbox.schema.json",
     "packages": [
       "nodejs"
     ],
@@ -13,7 +13,8 @@
       "scripts": {
         "test": [
           "npm add -g cowsay && cowsay \"npm add -g cowsay works\"; npm remove -g cowsay",
-          "pnpm add -g cowsay && cowsay \"pnpm add -g cowsay works\"; pnpm remove -g cowsay"
+          "pnpm add -g cowsay && cowsay \"pnpm add -g cowsay works\"; pnpm remove -g cowsay",
+          "corepack use yarn@v1.22.22 && yarn global add cowsay && cowsay \"yarn global add cowsay works\"; yarn global remove cowsay"
         ]
       }
     },
