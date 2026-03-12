@@ -2,7 +2,7 @@
 
 A [Devbox](https://www.jetify.com/docs/devbox/) plugin to set up a project-specific global directory for node.js package managers.
 
-This solves the issue of installing global packages described in the [Installing Global Packages](https://www.jetify.com/docs/devbox/devbox_examples/languages/nodejs/#installing-global-packages) section.
+This solves the issue of installing global packages described in the [Installing Global Packages](https://www.jetify.com/devbox/templates/node-npm#installing-global-packages) section.
 
 Supports npm, pnpm, yarn classic
 
